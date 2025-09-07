@@ -1,0 +1,13 @@
+{
+  "name": "@readytools/colors",
+  "version": "1.0.0",
+  "description": "Lightweight color conversion and palette utilities",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": ["colors", "readytools", "palette", "converter"],
+  "author": "ReadyTools",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/readytoolscode/colors.git"
+  }
+}
