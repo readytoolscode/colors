@@ -31,8 +31,7 @@ import { generateTones } from "./src/generateTones.js";
 import { generateHueVariants } from "./src/generateHueVariants.js";
 import { complementary, analogous, triadic, tetradic } from "./src/palettes.js";
 import { toCSS } from "./src/toCSS.js";
-
-// megvan köszi
+import { generateShadeScale } from "./src/shadeScale.js"
 
 export {
     hexToRgb, rgbToHex, rgbToHsl, hslToRgb, hexToCmyk,
@@ -42,5 +41,5 @@ export {
     complementary, analogous, triadic, tetradic,
     toCSS, invert, mix, hexAToRgba, rgbaToHexA,
     isValidHex, normalizeHex, parseColor, scale, ensureContrast,
-    rgbToXyz, xyzToLab, rgbToLab, labToRgb, deltaE76
+    rgbToXyz, xyzToLab, rgbToLab, labToRgb, deltaE76, generateShadeScale
 };

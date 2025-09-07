@@ -1,6 +1,3 @@
-
-
-
 # @readytools/colors
 
 Lightweight color conversion, palette generation, and accessibility utilities.  
@@ -29,7 +26,7 @@ import {
   // adjustments
   lighten, darken, saturate, desaturate, adjustHue, invert, mix,
   // generators
-  generateShades, generateTints, generateTones, generateHueVariants, scale,
+  generateShades, generateTints, generateTones, generateHueVariants, scale, shadeScale,
   // palettes
   complementary, analogous, triadic, tetradic,
   // parsing / validation / formats
@@ -225,6 +222,26 @@ rgbaToHexA(0,170,255,0.8); // "#00aaffcc"
 * Less saturated variants (reduce saturation).
 
 #### `generateHueVariants(hex: string, steps = 12, includeBase = true): string[]`
+
+#### `generateShadeScale(hex: string, options): string[]`
+
+* **Lab-based scale generator** — creates perceptually even lightness ramps.
+* Options:
+  - `steps` *(number, default 10)* – number of colors to generate
+  - `direction` *("darker" | "lighter" | "both", default "darker")* – ramp direction
+  - `includeBase` *(boolean, default true)* – whether to include the seed color
+  - `minL` *(number, default 8)* – minimum lightness (Lab L)
+  - `maxL` *(number, default 98)* – maximum lightness (Lab L)
+  - `easing` *(function, optional)* – easing function `(t)=>t` to skew the distribution
+
+* Example:
+
+  ```js
+  generateShadeScale("#ff6600", { steps: 5, direction: "darker" });
+  // ["#ff6600", "#cc5200", "#993d00", "#662900", "#331400"]
+
+  generateShadeScale("#ff6600", { steps: 7, direction: "both", includeBase: true });
+  // ["#331400","#662900","#993d00","#ff6600","#ff8533","#ffad66","#ffd6b3"]
 
 * Evenly spaced hues around the wheel.
 
