@@ -1,31 +1,35 @@
 {
-  "name": "@readytools/strings",
-  "version": "1.0.0",
-  "description": "Zero-dependency string utilities: case conversion, slugify, trimming, HTML escaping, UUID/random ID, and more — for modern frontend projects.",
-  "type": "module",
+  "name": "@readytools/colors",
+  "version": "1.0.6",
+  "description": "Modern zero-dependency color conversion, contrast checking, and palette generation for frontend designers by ReadyTools.",
   "main": "index.js",
+  "type": "module",
   "license": "MIT",
-  "author": "ReadyTools",
   "keywords": [
-    "strings",
-    "string-utils",
-    "string-tools",
-    "slugify",
-    "case",
-    "camelcase",
-    "kebab-case",
-    "snake-case",
-    "titlecase",
-    "trim",
-    "escape-html",
-    "uuid",
-    "random",
+    "colors",
+    "color",
+    "readytools",
+    "palette",
+    "converter",
+    "color-utils",
+    "color-tools",
+    "color-library",
+    "color-picker",
+    "color-scheme",
+    "hex",
+    "rgb",
+    "hsl",
+    "cmyk",
+    "contrast",
+    "wcag",
+    "accessibility",
     "frontend",
-    "readytools"
+    "design",
+    "ui-colors"
   ],
+  "author": "ReadyTools",
   "repository": {
     "type": "git",
-    "url": "https://github.com/readytoolscode/strings.git"
-  },
-  "funding": {
-    "type"
+    "url": "https://github.com/readytoolscode/colors.git"
+  }
+}
